@@ -15,6 +15,25 @@ public class Task07 {
     Beklenen Çıktı:
     12
     */
+       Scanner sc = new Scanner(System.in);
+        System.out.println("Birinci sayiyi giriniz");
+        int sayi1 = sc.nextInt();
+
+
+        System.out.println(" Ikinci sayiyi giriniz");
+        int sayi2 = sc.nextInt();
+
+
+        System.out.println(" Ucuncu sayiyi giriniz");
+        int sayi3 = sc.nextInt();
+
+
+
+
+
+
+
+
 
 
 

@@ -26,10 +26,21 @@ public class Task12 {
     validateEmail("hello@edabit.com")
     Çıktı : true
     */
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Bir email giriniz");
+        String email = sc.next();
+
+        System.out.println(emailkontrol(email));
 
 
     }
 
+    private static boolean emailkontrol(String email) {
+
+
+        return  ((email.contains("@") && email.contains(".") && email.substring(0, email.indexOf("@")).length() > 0)) ;
+
+    }
 
 
 }
