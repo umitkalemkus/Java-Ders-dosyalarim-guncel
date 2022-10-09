@@ -17,10 +17,12 @@ public class C04_Forloops {
         int harf=65;
 
         for (int i = 0; i <6 ; i++) {
-            for (int j = 0; j <=i ; j++) {
-                System.out.println((char)(harf + j)+" ");
 
+            for (int j = 0; j <=i ; j++) {
+
+                System.out.print((char)(harf + j)+" ");
             }
+
         }
 
 
