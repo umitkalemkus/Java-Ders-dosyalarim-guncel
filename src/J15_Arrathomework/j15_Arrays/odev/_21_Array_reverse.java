@@ -12,10 +12,11 @@ public class _21_Array_reverse {
         Input(girdi): 123
         Output(çıktı): 321
          */
-        int num =123;
-        String num1 []= Integer.toString(num).split("");
-        for (int i = num; i >=0 ; i++) {
-            System.out.println();
+        int a=123;
+        String num[]= Integer.toString(a).split("");
+        for (int i=num.length-1; i>=0; i--){
+            System.out.print(num[i]);
+        }
 
         }
 
@@ -26,6 +27,6 @@ public class _21_Array_reverse {
 
          }
 
-}
+
 
 

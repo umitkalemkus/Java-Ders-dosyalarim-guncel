@@ -15,5 +15,13 @@ public class _20_Arrayboth_Ends {
     Sonuç bu şekilde olmalıdır. [1, 4]
       */
 
+        int arr[] = {1,2,3,4};
+
+        int yeniarr[] =Arrays.copyOf(arr,2);
+        yeniarr[0]=arr[0];
+        yeniarr[1]=arr[3];
+        System.out.println(Arrays.toString(yeniarr));
+
+
     }
 }
