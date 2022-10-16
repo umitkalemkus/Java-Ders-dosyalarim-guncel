@@ -17,11 +17,7 @@ public class _20_Arrayboth_Ends {
 
         int arr[] = {1,2,3,4};
 
-        int yeniarr[] =Arrays.copyOf(arr,2);
-        yeniarr[0]=arr[0];
-        yeniarr[1]=arr[3];
-        System.out.println(Arrays.toString(yeniarr));
-
+        int arr1[]= {arr[0],arr[arr.length-1]};
 
     }
 }

@@ -25,7 +25,10 @@ public class Bakkal_Task {
 
         ArrayList<String> DayList=new ArrayList<>(List.of("Monday","Tuesday","Wendesday","Thursday","Friday","Saturday","Sunday"));
 
+        DayList.add("Weekend");
         System.out.println(DayList);
+
+
 
 
 
