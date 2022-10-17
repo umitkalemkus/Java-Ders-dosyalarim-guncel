@@ -10,6 +10,7 @@ public class C12_remove {
 
     //remove();-> list'ten istenen eleman siler
     ArrayList<String> listSehir = new ArrayList<>(List.of("Münih", "LosAngeles", "Londra", "Stockholm"));
+    ArrayList<String> listUlke = new ArrayList<>(List.of("Alamanya", "Amerigonya", "ingiltere", "isvec"));
 
         System.out.println(listSehir.remove("angara"));//false
         System.out.println(listSehir.remove("Londra"));//true
@@ -23,6 +24,13 @@ public class C12_remove {
         System.out.println("listSehir = " + listSehir);//[Münih, Stockholm, Münih, Angara, Münih]
         listSehir.remove("Münih");//tekrarlı elelman varsa ilk index elelman silinir diğerlerine dokunulmaz
         System.out.println("listSehir = " + listSehir);//[Münih, Stockholm, Münih, Angara, Münih]
+
+        listSehir.addAll(listUlke);
+        System.out.println(listSehir);
+        listSehir.removeAll(listUlke);
+        System.out.println(listSehir);
+
+
 
 
 }
