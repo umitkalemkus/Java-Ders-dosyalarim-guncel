@@ -21,9 +21,17 @@ public class Task02 {
         int arrToplam = 0;//local var.
 
 
-        for (int i = 0; i < arr.length; i++) {
-            arrToplam += arr[i];
+      //  for (int i = 0; i < arr.length; i++) {
+        //    arrToplam += arr[i];
+        //}
+        //System.out.println("array eleman toplamları : "+arrToplam);
+
+        for (Integer w: arr  ) {
+            arrToplam += w;
+
+
         }
-        System.out.println("array eleman toplamları : "+arrToplam);
+        System.out.println(arrToplam);
+
     }
 }
