@@ -1,41 +1,9 @@
-package j16_ArrayList.ArrayListTasks1.Tasks;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+package j16_ArrayList.ArrayListTasks2.Tasks;
 
 public class Task08 {
-
-
     public static void main(String[] args) {
         // Task-> Girilen sayıların içinde ortalamadan buyuk olanları print eden METHOD create ediniz.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        }
-
-
-
-
-
-
     }
 
 
-
-
-
-
+}

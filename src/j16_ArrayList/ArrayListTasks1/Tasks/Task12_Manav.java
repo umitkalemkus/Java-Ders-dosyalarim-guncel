@@ -20,6 +20,31 @@ public class Task12_Manav {
          * 4. Adim : Alisveris bitince toplam odemesi gereken tutari goster.
          *
          * */
+        ArrayList<String> manav = new ArrayList<>(Arrays.asList("Elma (0)","Armut(1)","Cilek(2)","Erik(3)","Patlican(4)"));
+
+        ArrayList<Integer>fiyat= new ArrayList<>(Arrays.asList(15,20,30,60,15));
+
+        int toplam=0;
+
+        while (true){
+            Scanner sc=new Scanner(System.in);
+            System.out.print("\"Elma (0)\",\"Armut(1)\",\"Cilek(2)\",\"Erik(3)\",\"Patlican(4)\"");
+            int urun = sc.nextInt();
+            System.out.println("kac kg istersiniz");
+            double kg = sc.nextDouble();
+            toplam+=fiyat.get(urun)*kg;
+            System.out.println("Alisverise devam etmek istiyorsaniz (1) cikis yapmak istiyorsaniz (0)giriniz");
+            int karar=sc.nextInt();
+            if (karar==0)
+                break;
+
+        }
+        System.out.println(toplam);
+
+
+
+
+
 
 
     }
