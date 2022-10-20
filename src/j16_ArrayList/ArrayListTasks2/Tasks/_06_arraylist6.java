@@ -18,6 +18,15 @@ public class _06_arraylist6 {
      */
 
     public static void main(String[] args) {
+        ArrayList<Integer> num = new ArrayList<>(List.of(5,4,6,2,1));
+
+        for (int i = 0; i < num.size() ; i++) {
+
+
+        }
+
+
+
 
 
 

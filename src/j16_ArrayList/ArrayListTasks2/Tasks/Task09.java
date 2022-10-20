@@ -11,7 +11,15 @@ public class Task09 {
    Bir integer list oluşturunuz ve bu list’deki tum sayıların karesinin
    toplamını bulan code create ediniz.
     */
+        ArrayList<Integer> num = new ArrayList<>(List.of(2,5,7,11,12,9));
+        int toplam=0;
+        for (int i = 0; i < num.size() ; i++) {
 
+            toplam+= num.get(i)* num.get(i);
+
+        }
+
+        System.out.println(toplam);
     }
 }
 
