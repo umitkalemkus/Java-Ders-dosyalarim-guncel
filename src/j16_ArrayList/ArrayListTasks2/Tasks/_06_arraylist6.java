@@ -26,6 +26,10 @@ public class _06_arraylist6 {
 
 
 
+
+
+
+
     }
 
 
