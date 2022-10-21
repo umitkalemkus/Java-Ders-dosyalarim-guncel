@@ -2,6 +2,7 @@ package j16_ArrayList.ArrayListTasks2.Tasks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class _10_arraylist12 {
 
@@ -23,6 +24,31 @@ public class _10_arraylist12 {
 
     public static void main(String[] args) {
 
+        ArrayList<Integer> num = new ArrayList<>(List.of(1 , 5 , 22, 10 ,20 ,14 , 8 , 25 , 30, 28));
+
+        System.out.println(rangeBtw((ArrayList<Integer>) num, 20, 30));
 
     }
+
+    private static int rangeBtw(ArrayList<Integer> a, int min, int max) {
+        int count=0;
+
+
+        for (int i =a.indexOf(Math.min( min ,max)); i <=a.indexOf(Math.max(min,max)) ; i++) {
+
+            count++;
+
+
+            
+        }
+        
+        
+        
+        
+        
+        
+     return count;
+    }
+
+
 }
