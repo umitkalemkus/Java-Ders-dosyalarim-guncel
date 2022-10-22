@@ -1,5 +1,7 @@
 package j16_ArrayList.ArrayListTasks2.Tasks;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class _11_prime_numbers {
@@ -18,11 +20,26 @@ public class _11_prime_numbers {
      */
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number");
-        int num = sc.nextInt();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Negatif olmayan bir sayı giriniz");
+        int num=sc.nextInt();
+        List<Integer> asalList=new ArrayList<>();
+        int count=0;
+        for (int i = 2; i <num ; i++) {
+            if (i!=2 && i!=3){
+                if(i%2==1 && i%3!=0){
+                    asalList.add(i);
+                    count++;
+                }
+            }else {
+                asalList.add(i);
+                count++;
+            }
+        }
+        System.out.println("count = " + count);
+        System.out.println("asalList = " + asalList);
 
 
-
-    }
 }
+}
+

@@ -19,27 +19,33 @@ public class _06_arraylist6 {
 
     public static void main(String[] args) {
         ArrayList<Integer> num = new ArrayList<>(List.of(5,4,6,2,1));
+        System.out.println(hillNum(num));
 
-        for (int i = 0; i < num.size() ; i++) {
+    }
 
+    private static int hillNum(ArrayList<Integer> num) {
+       int num1 =0;
+        for (int i = 1; i <num.size()-1 ; i++) {
+            if (num.get(i)<num.get(i-1)&&num.get(i)>num.get(i+1));
+            num1=num.get(i);
 
         }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+     return num1;
     }
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
