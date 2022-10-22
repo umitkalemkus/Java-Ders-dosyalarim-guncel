@@ -1,5 +1,7 @@
 package j16_ArrayList.ArrayListTasks2.Tasks;
 
+import java.util.Scanner;
+
 public class _11_prime_numbers {
 
     /*
@@ -16,6 +18,11 @@ public class _11_prime_numbers {
      */
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int num = sc.nextInt();
+
+
 
     }
 }
