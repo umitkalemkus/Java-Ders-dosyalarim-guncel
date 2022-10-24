@@ -1,4 +1,4 @@
-package j17_Constructor;
+package j20_Constructor;
 
 public class C05_Arac {
     //Fields (objenin uretilirken alacagi deger variablaari)

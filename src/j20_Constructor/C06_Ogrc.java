@@ -1,4 +1,4 @@
-package j17_Constructor;
+package j20_Constructor;
 
 public class C06_Ogrc {//Fields
     String  isim="Merwe Hanım ";

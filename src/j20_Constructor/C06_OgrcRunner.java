@@ -1,4 +1,4 @@
-package j17_Constructor;
+package j20_Constructor;
 
 public class C06_OgrcRunner {
     public static void main(String[] args) {

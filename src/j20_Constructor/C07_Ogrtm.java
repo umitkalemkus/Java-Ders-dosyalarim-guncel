@@ -1,4 +1,4 @@
-package j17_Constructor;
+package j20_Constructor;
 
 public class C07_Ogrtm {
     //ogrtmn obj için kalıphane

@@ -1,4 +1,4 @@
-package j17_Constructor;
+package j20_Constructor;
 
 public class C03_Student {
     // main olmayan sadece obj create etmek icin pojo ->plan  old object
