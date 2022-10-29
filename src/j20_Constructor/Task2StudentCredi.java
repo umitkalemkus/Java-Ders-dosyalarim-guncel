@@ -12,6 +12,8 @@ public class Task2StudentCredi {
      */
 
     String name;
+    int max;
+
     
 
 }
