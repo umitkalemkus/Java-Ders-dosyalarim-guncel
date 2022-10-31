@@ -15,5 +15,6 @@ public class BisikletRunner {
 
         }while(secim<5);
 
+
     }
 }
