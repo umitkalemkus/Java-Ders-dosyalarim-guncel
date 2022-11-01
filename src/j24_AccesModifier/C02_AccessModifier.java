@@ -1,6 +1,6 @@
 package j24_AccesModifier;
 
-public class C02_AccessModifier {
+public class C02_AccessModifier  {
 
     public static void main(String[] args) {
 
