@@ -13,87 +13,86 @@ public class Bisiklet {
             */
 
 
-    static int hiz ;
-    static int vites;
+      int hiz;
+      int vites;
 
-    public int secim;
+      int islem;
 
+    public Bisiklet(int hiz, int vites) {
+        this.hiz = hiz;
+        this.vites = vites;
 
+    }
+    public int hizdegistir(){
+       Scanner sc = new Scanner(System.in);
+        System.out.println("Lutfen hizinizi giriniz");
+        hiz = sc.nextInt();
+        return hiz;
+    }
 
+    public int vitesArtir(){
+        vites +=1;
+        if(vites>5){
+            System.out.println("vites 5'den buyuk olmamali");
+            vites=5;
+        }
 
+     return vites;
+    }
 
+    public int vitesAzalt(){
+        vites +=1;
+        if(vites<1){
+            System.out.println("vites 1'den kucuk olmamali");
+            vites=1;
+        }
 
+        return vites;
+    }
 
-
-    public static void hizdegistir(int yeniHiz) { hiz=yeniHiz;}
-
-
-    public static void vitesArtir() {
-        vites++;
-     if(vites>5){
-
-         System.out.println("Vites 5 den buyuk olamaz");
-         vites=5;
-     }
+    public void durumGoster(){
+        System.out.println("Simdiki hiziniz =" +hiz + " Simdiki vitesiniz ="+ vites);
 
     }
 
+    public void islemYap(){
+
+        Scanner sc = new Scanner(System.in);
+        do {
 
 
-    public static void vitesAzalt() {
+        System.out.println("Lutfen yapmak istediginiz islemi seciniz \n 1- Hiz degistirmek icin (1)\n Vites arttırmak için (2)" +
+                " \n Vites azaltmak için (3) \n Mevcut durum için (4) \n Çıkış için (0)\n");
+        islem = sc.nextInt();
 
-        vites--;
-     if(vites<1){
-         System.out.println("Vites 1 den kucuk olamaz");
-         vites=1;
-     }
-    }
+        switch (islem){
+            case 1 :
+                hizdegistir();
+            break;
 
-
-
-    public static void durumugoster() {
-
-        System.out.println("Simdiki hiziniz =  "+ hiz  +  "   Simdiki vitesiniz  = "+  vites  +"dir.");
-
-    }
-
-    public static void IslemYap(Bisiklet bisiklet , int secim){
-        switch (secim) {
-            case 1:
-                System.out.println("Hiz giriniz : ");
-                Scanner sc = new Scanner(System.in);
-                int yeniHiz = sc.nextInt();
-                bisiklet.hizdegistir(yeniHiz);
-                break;
-            case 2:
+            case 2 :
                 vitesArtir();
-                break;
-            case 3:
-                vitesArtir();
-                break;
-            case 4:
-                durumugoster();
-                break;
+            break;
+
+            case 3 :
+                vitesAzalt();
+            break;
+
+            case 4 :
+                durumGoster();
+            break;
+
+            case 0 :
+                System.out.println("Dikkatli surun");
+            break;
+
             default:
-
-
-        }
-    }
-
-
-
-
-
-
-
-    public  void MenuYaz() {
-
-            System.out.println("Asagidaki islemlerden biriniz seciniz");
-                System.out.println("1- Hiz degistir\n" +
-                        "2- Vites Artir\n" +
-                        "3- Vites Azalt\n" +
-                        "4- Durumu goster\n" +
-                        "5- Cikmak icin 5'e basin");
+                System.out.println("Yanlis bir giris yaptiniz");
 
         }
+
+
+        }while(islem!=0);
     }
+
+}
