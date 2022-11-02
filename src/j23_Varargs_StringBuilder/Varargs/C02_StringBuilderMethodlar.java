@@ -45,6 +45,7 @@ public class C02_StringBuilderMethodlar {
         System.out.println("sb1.charAt(12) = " + sb1.charAt(12));//m
 
         //Belirli aralıktaki character'leri alma
+
         System.out.println("sb1.subSequence(3,13) = " + sb1.subSequence(3, 13));//3.4.5...12 index karakterleri->ATAR selam
         System.out.println("sb1.substring(17) = " + sb1.substring(17));//17.18... 17 ve soan kadar tüm karakterler ->un 24 true basarı gayrete asıktır :)
         System.out.println("sb1.substring(3,13) = " + sb1.substring(3, 13));//3.4.5...12 index karakterleri->ATAR selam
