@@ -2,14 +2,14 @@ package j26_Inheritance.Inheritance02;
 
 public class Mammal extends Hayvancık {// hayvancik parentin child klasidir- babadir
     public Mammal() {//parametresiz constractor
-        this('y');
+        this('y');//bu klasin parametreli constartr call edildi.
         System.out.println("Agam ahan da mammal p'siz cons...");
     }
     public Mammal(char c) {//parametreli constractor
 
-        super(17);
+        super(17); //parent hayvancik class
 
-        System.out.println("Agam ahan da mammal p'siz cons...");
+        System.out.println("Agam ahan da mammal p'li cons...");
     }
 
     public void mC(){

@@ -11,7 +11,7 @@ public class Hayvancık {//
     public Hayvancık(int i) {//parametreli constractir
 
 
-        System.out.println("Agam ahan da Hayvancik p'siz cons...");
+        System.out.println("Agam ahan da Hayvancik p'li cons...");
 
     }
     public void mA(){
