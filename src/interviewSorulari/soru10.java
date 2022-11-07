@@ -10,6 +10,13 @@ public class soru10 {
         int c=300;
 
 
+        if (c>b&&c>a){
+            System.out.println( "c is the greatest number");
+        }
+        else if (b>a) {
+            System.out.println("b is  the greatest number");
+
+        }else System.out.println("a is the greatest number");
 
 
     }
