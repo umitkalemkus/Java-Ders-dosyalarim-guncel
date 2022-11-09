@@ -5,20 +5,24 @@ import java.util.Scanner;
 public class soru17FibonacciSeries {
     //Fibonacci Series
     public static void main(String[] args) {
-        Scanner sc =new Scanner(System.in);
-        System.out.println("Enter a number");
-        int number = sc.nextInt();
-         int toplam=1;
-        for (int i = 2; i <number ; i++) {
 
-           int fibonacci =(i-1)+(i-2);
+        int n1=0;
+        int n2=1;
+        int count = 20;
+        int n3;
+        System.out.print(n1+" "+n2);
+
+        for (int i = 2; i <=count ; i++) {
+            n3= n1+n2;
+
+            System.out.print(" "+n3);
+
+            n1=n2;
+            n2=n3;
 
 
-
-
-
+            
         }
-
 
 
 
