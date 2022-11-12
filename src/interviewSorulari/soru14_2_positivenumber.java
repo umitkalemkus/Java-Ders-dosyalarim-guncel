@@ -2,7 +2,7 @@ package interviewSorulari;
 
 import java.util.Scanner;
 
-public class soru12positivenumber {
+public class soru14_2_positivenumber {
     //Positive and Negative Number Finding
 
     public static void main(String[] args) {

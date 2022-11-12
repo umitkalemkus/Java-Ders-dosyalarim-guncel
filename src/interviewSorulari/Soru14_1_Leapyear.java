@@ -2,7 +2,7 @@ package interviewSorulari;
 
 import java.util.Scanner;
 
-public class Soru11Leapyear {
+public class Soru14_1_Leapyear {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number");
