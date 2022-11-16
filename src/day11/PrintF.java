@@ -17,7 +17,7 @@ public class PrintF {
         //sayi :753, str :BOOTCAMP CLARUSWAY, db :3,895631
 
         System.out.printf("sayi: %10d, str :%-20.10S, db: %-5.3f\n",sayi,str,db);
-        //sayi:        753, str :BOOTCAMP C          , db: 3,896
+        //sayi:        753, str :BOOTCAMP Test01          , db: 3,896
 
         //%10d -> 10 hanelik yer ayir, kapasite
         //%-20.10S -> sola yaslayarak 20 birimlik kapasite ver, String ifadenin buyuk harf ile 10 karakterini yazdir

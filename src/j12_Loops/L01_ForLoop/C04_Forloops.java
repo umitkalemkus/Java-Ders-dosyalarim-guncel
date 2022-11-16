@@ -7,10 +7,10 @@ public class C04_Forloops {
      /*
         A
         A B
-        A B C
-        A B C D
-        A B C D E
-        A B C D E F
+        A B Test01
+        A B Test01 D
+        A B Test01 D E
+        A B Test01 D E F
         şeklini yazdırınız.  65=A'nın ascıı değeri
 
         */

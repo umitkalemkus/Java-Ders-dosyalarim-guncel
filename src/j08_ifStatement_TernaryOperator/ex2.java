@@ -13,7 +13,7 @@ public class ex2 {
         }else if (not<50){//50 den kucuk not alma kontrolu
             System.out.println("D");//1,2,3..49
         }else if (not<60){//60 den kucuk not alma kontrolu
-            System.out.println("C");
+            System.out.println("Test01");
         }else if (not<80){//80 den kucuk not alma kontrolu
             System.out.println("B");//60,61,...79
         }else {//80 ve buyuk    not alma kontrolu

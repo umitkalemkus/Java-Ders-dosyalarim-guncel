@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Task15 {
     /*
-    A şehrinden uçmak isteyen bir yolcu B şehrine 500km C şehrine  700km  D şehrine  900 km mesafededir.
+    A şehrinden uçmak isteyen bir yolcu B şehrine 500km Test01 şehrine  700km  D şehrine  900 km mesafededir.
     Bilet tarifesi:
     km birim fiyati : 0.10$
     yolcu 12 yasindan kucukse toplam fiyat %50 indirim,
@@ -17,7 +17,7 @@ public class Task15 {
 
     public static void main(String[] args) {
 
-        System.out.println("JavaAirlines'e hoş geldin AGAM :)  \nB C D roıtasından birsini seçiniz : ");
+        System.out.println("JavaAirlines'e hoş geldin AGAM :)  \nB Test01 D roıtasından birsini seçiniz : ");
 
         String  rota=sc.next().toUpperCase();//rota verisi alındı
 
@@ -29,10 +29,10 @@ public class Task15 {
 
 
         double fiyatB=500*0.10;//A dan B ye ucus fiyatı
-        double fiyatC=700*0.10;//A dan C ye ucus fiyatı
+        double fiyatC=700*0.10;//A dan Test01 ye ucus fiyatı
         double fiyatD=900*0.10;//A dan D ye ucus fiyatı
 
-        if (rota.equals("B") ||rota.equals("C")||rota.equals("D")){//rota kontrolu yapıldı
+        if (rota.equals("B") ||rota.equals("Test01")||rota.equals("D")){//rota kontrolu yapıldı
 
             if (yas>65){//yas kontrolu
                 if (rota.equals("B")){//rot B sartı
@@ -45,13 +45,13 @@ public class Task15 {
                     }else System.out.println("agam hala yonun belli değil");
 
 
-                }else if (rota.equals("C")){//rota cCsartı
+                }else if (rota.equals("Test01")){//rota cCsartı
                     if (ucusYonu==1){//cift yon ucus kontrolu
                         System.out.println("   ***   ");
-                        System.out.println("65 yas ustu C sehrine çift yon ucus bilet fiyatınız :  "+(fiyatC*0.7*0.8*2)+" $");
+                        System.out.println("65 yas ustu Test01 sehrine çift yon ucus bilet fiyatınız :  "+(fiyatC*0.7*0.8*2)+" $");
                     } else if (ucusYonu==0) {
                         System.out.println("   ***   ");
-                        System.out.println("65 yas ustu C sehrine tek  yon ucus bilet fiyatınız :  "+(fiyatC*0.7)+" $");
+                        System.out.println("65 yas ustu Test01 sehrine tek  yon ucus bilet fiyatınız :  "+(fiyatC*0.7)+" $");
                     }else System.out.println("agam hala yonun belli değil");
                 }else if (rota.equals("D")){//rota D sarı
                     if (ucusYonu==1){//cift yon ucus kontrolu
@@ -74,13 +74,13 @@ public class Task15 {
                     }else System.out.println("agam hala yonun belli değil");
 
 
-                }else if (rota.equals("C")){//rota cCsartı
+                }else if (rota.equals("Test01")){//rota cCsartı
                     if (ucusYonu==1){//cift yon ucus kontrolu
                         System.out.println("   ***   ");
-                        System.out.println("12-24 yas arası  C sehrine çift yon ucus bilet fiyatınız :  "+(fiyatC*0.9*0.8*2)+" $");
+                        System.out.println("12-24 yas arası  Test01 sehrine çift yon ucus bilet fiyatınız :  "+(fiyatC*0.9*0.8*2)+" $");
                     } else if (ucusYonu==0) {
                         System.out.println("   ***   ");
-                        System.out.println("12-24 yas arası  C sehrine tek  yon ucus bilet fiyatınız :  "+(fiyatC*0.9)+" $");
+                        System.out.println("12-24 yas arası  Test01 sehrine tek  yon ucus bilet fiyatınız :  "+(fiyatC*0.9)+" $");
                     }else System.out.println("agam hala yonun belli değil");
                 }else if (rota.equals("D")){//rota D sarı
                     if (ucusYonu==1){//cift yon ucus kontrolu
@@ -102,13 +102,13 @@ public class Task15 {
                     }else System.out.println("agam hala yonun belli değil");
 
 
-                }else if (rota.equals("C")){//rota cCsartı
+                }else if (rota.equals("Test01")){//rota cCsartı
                     if (ucusYonu==1){//cift yon ucus kontrolu
                         System.out.println("   ***   ");
-                        System.out.println("12 yas altı  C sehrine çift yon ucus bilet fiyatınız :  "+(fiyatC*0.5*0.8*2)+" $");
+                        System.out.println("12 yas altı  Test01 sehrine çift yon ucus bilet fiyatınız :  "+(fiyatC*0.5*0.8*2)+" $");
                     } else if (ucusYonu==0) {
                         System.out.println("   ***   ");
-                        System.out.println("12 yas altı  C sehrine tek  yon ucus bilet fiyatınız :  "+(fiyatC*0.5)+" $");
+                        System.out.println("12 yas altı  Test01 sehrine tek  yon ucus bilet fiyatınız :  "+(fiyatC*0.5)+" $");
                     }else System.out.println("agam hala yonun belli değil");
                 }else if (rota.equals("D")){//rota D sarı
                     if (ucusYonu==1){//cift yon ucus kontrolu
@@ -131,13 +131,13 @@ public class Task15 {
                     }else System.out.println("agam hala yonun belli değil");
 
 
-                }else if (rota.equals("C")){//rota cCsartı
+                }else if (rota.equals("Test01")){//rota cCsartı
                     if (ucusYonu==1){//cift yon ucus kontrolu
                         System.out.println("   ***   ");
-                        System.out.println("24-65 arası  C sehrine çift yon ucus bilet fiyatınız :  "+(fiyatC*0.8*2)+" $");
+                        System.out.println("24-65 arası  Test01 sehrine çift yon ucus bilet fiyatınız :  "+(fiyatC*0.8*2)+" $");
                     } else if (ucusYonu==0) {
                         System.out.println("   ***   ");
-                        System.out.println("24-65 arası  C sehrine tek  yon ucus bilet fiyatınız :  "+(fiyatC)+" $");
+                        System.out.println("24-65 arası  Test01 sehrine tek  yon ucus bilet fiyatınız :  "+(fiyatC)+" $");
                     }else System.out.println("agam hala yonun belli değil");
                 }else if (rota.equals("D")){//rota D sarı
                     if (ucusYonu==1){//cift yon ucus kontrolu

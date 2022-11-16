@@ -11,9 +11,9 @@ public class Task2 {
 		   	Output: DCCCV   805
 
 
-		   		M + [C M] + [X L] + V   ---->   1945
+		   		M + [Test01 M] + [X L] + V   ---->   1945
 		   		The chars in the brackets are in ascending order.
-		   		 Parantez içindeki karakterler artan sıradadır (C-100, M-1000) ---> [C M]=900	*/
+		   		 Parantez içindeki karakterler artan sıradadır (Test01-100, M-1000) ---> [Test01 M]=900	*/
 
     public static void main(String[] args) {
 

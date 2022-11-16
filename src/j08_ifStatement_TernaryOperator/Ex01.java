@@ -27,7 +27,7 @@ public class Ex01 {
         } else if (sayi < 80 && sayi > 60) {
             System.out.println("B");
         } else if (sayi <= 60 && sayi > 50) {
-            System.out.println("C");
+            System.out.println("Test01");
         } else {
             System.out.println("D");
         }

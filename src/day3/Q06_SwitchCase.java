@@ -7,14 +7,14 @@ public class Q06_SwitchCase {
 /*
           * Kullanicidan ilk 3 buyuk harfden biri secildiginde cumle yazdiran kod yaziniz (switch case kullanin)
           * ornek
-          *  Kullanici  : A , B , C harflerinden birini secsin
+          *  Kullanici  : A , B , Test01 harflerinden birini secsin
               A'yi secmis ise, ==> Java is easy
               B'yi secmis ise, ==> Java is fun
-              C'yi secmis ise, ==> I need to study :)
+              Test01'yi secmis ise, ==> I need to study :)
           */
        {
             Scanner scan = new Scanner(System.in);
-            System.out.println("lutfen harflerden birini seciniz : \nA \nB \nC");
+            System.out.println("lutfen harflerden birini seciniz : \nA \nB \nTest01");
             char choice = scan.next().toUpperCase().charAt(0); //girilen ifadeyi buyuk harfe cevirip ilk karakterini alir
             switch (choice){
                 case 'A' :
@@ -24,7 +24,7 @@ public class Q06_SwitchCase {
                 case 'C':
                     System.out.println("I need to study :)"); break;
                 default:
-                    System.out.println("A,B ve C harflerinden biriniz seciniz");
+                    System.out.println("A,B ve Test01 harflerinden biriniz seciniz");
             }
         }
 

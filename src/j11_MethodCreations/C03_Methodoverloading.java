@@ -39,9 +39,9 @@ public class C03_Methodoverloading {
 
         String str = "javaCAN'lara selam olsun :)";
 
-        System.out.println(str.indexOf("C"));
-        System.out.println(str.indexOf('C'));
-        System.out.println(str.indexOf("C", 3));
+        System.out.println(str.indexOf(1));
+        System.out.println(str.indexOf(2));
+        System.out.println(str.indexOf(3));
 
 
     }//main sonu

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Q06_Whileloop {
     /*  Problem Tanımı
      Verilen iki sayının kombinasyonunu bulan kodu yazınız.
-     Hatırlatma C(n,r) = n! / (r!(n-r)!)
+     Hatırlatma Test01(n,r) = n! / (r!(n-r)!)
      Verilen iki sayının permütasyonunu bulan kodu yazınız.
      Hatırlatma P(n,r) = n! / (n-r)!
      Ekran Çıktısı

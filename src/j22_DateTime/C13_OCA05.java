@@ -15,7 +15,7 @@ public class C13_OCA05 {
          *
          * B) 2014-05-04T00:00:00:000
          *
-         * C) 5/4/14T00:00:00:000
+         * Test01) 5/4/14T00:00:00:000
          *
          * D) An exception is throw at runtime ***
          */

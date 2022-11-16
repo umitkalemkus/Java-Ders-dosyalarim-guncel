@@ -10,8 +10,8 @@ public class RomanRAKAMI {
 		   	Output: DCCCV   805
 
 
-		   		M + [C M] + [X L] + V   ---->   1945
-		   		The chars in the brackets are in ascending order. (C-100, M-1000) ---> [C M]=900
+		   		M + [Test01 M] + [X L] + V   ---->   1945
+		   		The chars in the brackets are in ascending order. (Test01-100, M-1000) ---> [Test01 M]=900
 		*/
         System.out.println(convertRomans("MCMXLV"));
     }

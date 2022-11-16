@@ -1,4 +1,5 @@
 package UmitPractise;
 
-public class socrative {
+public class Test {
+
 }
