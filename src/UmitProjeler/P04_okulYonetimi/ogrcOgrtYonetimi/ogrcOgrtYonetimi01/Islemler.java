@@ -22,6 +22,8 @@ public class Islemler {
         System.out.print("Lutfen yapmak istediginiz islemi giriniz : ");
         System.out.print("isleminiz seciniz : ");
         String secim = scan.next().toUpperCase();
+
+
         switch (secim) {
             case "1":
                 kisiTuru = "OGRENCI";
