@@ -34,10 +34,10 @@ public class Ogretmen extends Kisi {
 
     @Override
     public String toString() {
-        return "Ogretmen{" +
+        return "Ogretmen" + super.toString()+
                 "bolum='" + bolum + '\'' +
                 ", sicilNo='" + sicilNo + '\'' +
-                "} " + super.toString();
+                "} " ;
     }
 // @Override
    // public String toString() {

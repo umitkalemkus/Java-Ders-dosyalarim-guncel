@@ -1,5 +1,6 @@
 package UmitProjeler.P04_okulYonetimi.ogrcOgrtYonetimi.ogrcOgrtYonetimi01;
 
+import java.nio.channels.ScatteringByteChannel;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -20,7 +21,7 @@ public class Islemler {
         System.out.println(R+"**********************************    "+Y+" \nOGRENCI VE OGRETMEN YONETIM PANELI\n"+G+"**********************************");
         System.out.println(B+"1- OGRENCI ISLEMLERI\n2- OGRETMEN ISLEMLERI\nQ- CIKIS ");
         System.out.print("Lutfen yapmak istediginiz islemi giriniz : ");
-        System.out.print("isleminiz seciniz : ");
+       // System.out.print("isleminiz seciniz : ");
         String secim = scan.next().toUpperCase();
 
 
@@ -57,7 +58,7 @@ public class Islemler {
                 +R+"*********** "+kisiTuru+" ISLEMLER ************\n"+B+" 1-EKLEME\n 2-ARAMA\n 3-LISTELEME\n 4-SILME\n 0-ANA MENU");
         System.out.print(B+"Islem Tercihiniz : ");
 
-        System.out.print("islem tercihinizi giriniz : ");
+       // System.out.print("islem tercihinizi giriniz : ");
         int secilenIslem = scan.nextInt();
 
         switch (secilenIslem) {
@@ -139,7 +140,8 @@ public class Islemler {
             System.out.println(ogrncListesi);
         }else {//ogretmen listeleniyor
             for (Kisi k: ogrtListesi) {
-                System.out.println(k.toString()+" adı soyadı : "+k.getAdSoyad()+k.getYas());
+                //System.out.println(k.toString()+" adı soyadı : "+k.getAdSoyad()+k.getYas());
+                System.out.println(k);
 
             }
         }
@@ -185,14 +187,31 @@ public class Islemler {
     }
 
     private static void ekle() {
-        System.out.println(R+"   ***   " + kisiTuru + " ekleme sayfası   ***"+B);
+        System.out.println(R + "   ***   " + kisiTuru + " ekleme sayfası   ***" + B);
         System.out.print("ad soyad giriniz : ");
         scan.nextLine();//dummy hayalet komut
         String adSoyad = scan.nextLine();
         System.out.print("kimlik No giriniz : ");
         String kimlikNo = scan.next();
-        System.out.print("yas giriniz : ");
-        int yas = scan.nextInt();
+
+        int yas;
+        while (true) {
+            try {
+                System.out.print("yas giriniz : ");
+                yas = scan.nextInt();
+                if (yas < 0 || yas > 100) {
+                    throw new ArithmeticException();
+                } else break;
+            } catch (ArithmeticException e) {
+                System.out.println("Yas sifir ile 100 arasinda olmalidir");
+            } catch (Exception e) {
+                String str =scan.next();
+                System.out.println("Hatali girisi yaptiniz");
+            }
+
+        }
+
+
         if (kisiTuru.equals("OGRENCI")) {
 
             System.out.print("ogrenci No giriniz : ");
@@ -204,7 +223,7 @@ public class Islemler {
             ogrncListesi.add(sefilOgrenci);
         } else {//kisiTuru öğrenci ise if çalısir değilse kisiTuru öğretmen demektir ki else body çalışır
             System.out.print("sicil No giriniz : ");
-            String sicilNo = scan.nextLine();
+            String sicilNo = scan.next();
             scan.nextLine();//dummy
             System.out.print("bolum giriniz : ");
             String bolum = scan.nextLine();
