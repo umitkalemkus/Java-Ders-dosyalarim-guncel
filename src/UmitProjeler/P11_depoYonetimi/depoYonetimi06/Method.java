@@ -106,7 +106,7 @@ public class Method implements GirisCikisInterface {
 
         int arananId=scan.nextInt();
 
-        if(Character.isDigit(arananId)){
+       // if(!Character.isDigit(arananId)){
             if(urunler.keySet().contains(arananId)) {
 
                 System.out.println("Guncel miktarinizi giriniz");
@@ -116,7 +116,7 @@ public class Method implements GirisCikisInterface {
             }else{
                 System.out.println("aradiniz urun yok");
             }
-        }}
+        }
 
 
     private static void rafaKoy() {
@@ -143,8 +143,9 @@ public class Method implements GirisCikisInterface {
 
             System.out.println("Guncel miktarinizi giriniz");
             int guncelMik = scan.nextInt();
+            if(urunler.get(arananId).getMiktar()>0 && !(urunler.get(arananId).getMiktar()>guncelMik)){
             urunler.get(arananId).setMiktar(urunler.get(arananId).getMiktar()-guncelMik);
-
+            }else System.out.println("Olmayan urunu ve olandan  calistiriyorsun");
         }else{
             System.out.println("aradiniz urun yok");
         }

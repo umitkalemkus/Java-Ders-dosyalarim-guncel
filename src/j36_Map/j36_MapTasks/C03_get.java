@@ -1,10 +1,8 @@
-package j36_Map;
+package j36_Map.j36_MapTasks;
 
 import java.util.HashMap;
 
 public class C03_get {
-
-
     public static void main(String[] args) {
 
         HashMap<String, String> hm = new HashMap<>();
@@ -24,11 +22,4 @@ public class C03_get {
         System.out.println("hm.get(12) = " + hm.get(12));//null: key data type farketmeksizin olmayan key null return eder
 
     }
-
-    }
-
-
-
-
-
-
+}
