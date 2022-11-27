@@ -82,9 +82,12 @@ public class Method implements GirisCikisInterface {
         String uretici=scan.nextLine();
         System.out.println("Birim");
         String birim=scan.nextLine();
+        if (urunler.containsKey(urunIsmi)){
+            System.out.println("Girdiginiz urun mevcut");}
+        else {
         UrunTanimlama urun=new UrunTanimlama(id,urunIsmi,uretici,birim);
         urunler.put(id,urun);
-        id++;
+        id++;}
 
     }
 
