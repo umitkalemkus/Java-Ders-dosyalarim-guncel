@@ -33,6 +33,12 @@ public class C09_skip {
                 sorted(Comparator.comparing(t -> t.charAt(t.length() - 1))).//akısdaki elelmanların son karakrerine göre sıralanadı
                 skip(2).forEach(t-> System.out.print(t+" "));//akısdaki ilk 2 eleman akısdan atıldı
 
+        System.out.println("***3**********************");
+
+        System.out.println(menu.
+                stream().
+                sorted(Comparator.comparing(t -> t.charAt(t.length() - 1))).skip(2));
+
 
     }
 }
