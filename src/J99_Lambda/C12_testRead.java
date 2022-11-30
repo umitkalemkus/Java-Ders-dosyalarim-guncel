@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.stream.Stream;
 
 public class C12_testRead {
@@ -43,12 +44,37 @@ public class C12_testRead {
                 count()//akısdaki elelmanlar saydırıldı
         );
 
+        System.out.println("TASK 05 --> haluk.txt dosyasindaki farkli kelimeleri  print ediniz...");
 
-        //TASK 05 --> haluk.txt dosyasindaki farkli kelimeleri  print ediniz..
-        //TASK 06 --> haluk.txt dosyasindaki tum kelimeleri natural order  print ediniz..
-        //TASK 07 --> haluk.txt dosyasinda "basari" kelimesinin kac kere gectigini buyuk harf kucuk harf bagımsız print ediniz.
-        //TASK 08 --> haluk.txt dosyasinda "a" harfi gecen kelimelerin sayisini print eden  programi create ediniz.
-        //TASK 09 --> haluk.txt dosyasinda icinde "a" harfi gecen kelimeleri print ediniz.
+         Files.lines(Path.of("src/J99_Lambda/haluk")).map(t->t.split(" ")).flatMap(Arrays::stream).distinct().forEach(t->System.out.print(t+" "));
+
+
+
+       System.out.println( "\nTASK 06 --> haluk.txt dosyasindaki tum kelimeleri natural order  print ediniz..");
+
+
+
+
+       Files.lines(Path.of("src/J99_Lambda/haluk")).map(t->t.split(" ")).flatMap(Arrays::stream).sorted().forEach(t->System.out.print(t+" "));
+
+
+
+
+        System.out.println("\nTASK 07 --> haluk.txt dosyasinda basari kelimesinin kac kere gectigini buyuk harf kucuk harf bagımsız print ediniz." );
+
+
+        System.out.println((Files.lines(Path.of("src/J99_Lambda/haluk")).map(t -> t.split(" ")).flatMap(Arrays::stream).map(t -> t.contains("basari")).count()));
+
+
+        System.out.println("TASK 08 --> haluk.txt dosyasinda \"a\" harfi gecen kelimelerin sayisini print eden  programi create ediniz.");
+
+        System.out.println(Files.lines(Paths.get("src/J99_Lambda/haluk")).map(String::toLowerCase).map(t -> t.split(" ")).flatMap(Arrays::stream).filter(t -> t.contains("a")).count());
+
+        System.out.println("TASK 09 --> haluk.txt dosyasinda icinde a harfi gecen kelimeleri print ediniz. " );
+
+        Files.lines(Paths.get("src/J99_Lambda/haluk")).map(String::toLowerCase).map(t -> t.split(" ")).flatMap(Arrays::stream).filter(t -> t.contains("a").
+
+
         //TASK 10 --> haluk.txt dosyasinda kac /farklı harf kullanildigini print ediniz.
         //TASK 11 --> haluk.txt dosyasinda kac farkli kelime kullanildigini print ediniz.
         //TASK 12 --> haluk.txt dosyasinda  farkli kelimeleri print ediniz
