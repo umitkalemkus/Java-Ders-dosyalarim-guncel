@@ -72,7 +72,7 @@ public class C12_testRead {
 
         System.out.println("TASK 09 --> haluk.txt dosyasinda icinde a harfi gecen kelimeleri print ediniz. " );
 
-        Files.lines(Paths.get("src/J99_Lambda/haluk")).map(String::toLowerCase).map(t -> t.split(" ")).flatMap(Arrays::stream).filter(t -> t.contains("a").
+
 
 
         //TASK 10 --> haluk.txt dosyasinda kac /farklı harf kullanildigini print ediniz.
