@@ -3,7 +3,7 @@ package interviewSorulari;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class Soru54 {
+public class Soru54fileOkuma {
     public static void main(String[] args) throws Exception {
 
 
