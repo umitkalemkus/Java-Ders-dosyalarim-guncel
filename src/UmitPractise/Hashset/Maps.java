@@ -25,6 +25,7 @@ public class Maps {
         System.out.println("klm.entrySet() = " + klm.entrySet());
 
 
+
         for (String w :klm.values()) {
             System.out.print(w+" ");
             
@@ -39,6 +40,12 @@ public class Maps {
         System.out.println("klm.getOrDefault(101,\"Umit Kalemkus\") = " + klm.getOrDefault(101, "Umit Kalemkus"));
 
         System.out.println("klm.get(103) = " + klm.get(103));
+        System.out.println("klm.containsValue(\"Umit KAlemkus\") = " + klm.containsValue("Umit Kalemkus"));
+
+        System.out.println("klm.remove(111) = " + klm.remove(111));
+        System.out.println(klm);
+        System.out.println("klm.putIfAbsent(123,\"Bulent Kalemkus\") = " + klm.putIfAbsent(123, "Bulent Kalemkus"));
+        System.out.println(klm);
 
     }
 }
