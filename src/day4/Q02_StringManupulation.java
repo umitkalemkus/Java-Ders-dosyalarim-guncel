@@ -9,6 +9,11 @@ public class Q02_StringManupulation {
 
 
 
+
+
+
+
+
         Scanner scan = new Scanner(System.in);
         System.out.println("String 1 :");
         String str1 = scan.nextLine();
