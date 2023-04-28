@@ -7,6 +7,10 @@ public class Q11_StringManupulatiion {
     public static void main(String[] args) {
 
 
+
+
+
+
         Scanner scan = new Scanner(System.in);
         System.out.println("bir isim giriniz : ");
         String isim = scan.next();
