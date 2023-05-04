@@ -13,6 +13,9 @@ public class Q03_StringManupulation {
          3) \\s   ==> space
              \\S   ==> space disindaki hersey  */
     public static void main(String[] args) {
+
+
+
         String str1= "$13.99";
         str1=str1.replaceAll("\\D", "");
         System.out.println(str1); //1399
