@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class C03_RakamToplami {
 
     public static void main(String[] args) {
+
+
         // kullanıcıdan alınan 3 basamaklı bir sayını rakamları toplamını print eden code create ediniz
 
         Scanner scan = new Scanner(System.in);
