@@ -75,6 +75,7 @@ public class C01_LambdaExpression {
     public static void printElFunctional(List<Integer> sayi) {//functional pr
 
 
+
         sayi.//aksiyona girecek list coll.
                 stream().//List elemanlarını yukarıdan aşağıya akısa alır.
                 forEach((t) -> System.out.print(t + " "));//datanın parametresine göre akısdaki her bir elelmanı işleme sokar
