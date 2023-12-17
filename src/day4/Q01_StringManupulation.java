@@ -12,6 +12,7 @@ public class Q01_StringManupulation {
         Scanner sc = new Scanner(System.in);
         System.out.println("Isminizi ve soy isminizi giriniz");
 
+
         String firstName = sc.nextLine() , lastName=sc.nextLine();
 
         String fulName = firstName.concat(""+lastName).toUpperCase();
@@ -19,9 +20,8 @@ public class Q01_StringManupulation {
 
 
 
-
-
-
+        Integer sayi = new Integer(13);
+        System.out.println("sayi.hashCode() = " + sayi.equals(40));
 
 
     }
