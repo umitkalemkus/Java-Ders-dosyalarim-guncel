@@ -21,6 +21,7 @@ public class C04_WrapperClass {
         // ara çözüm imkanı sunmuştur.
 
 
+
         String tc = "1234455";
         String id = "98765";
         int yeniTC = Integer.valueOf(tc);// tc String degerini int cevirdi ve yeni Tc ye atandi.
