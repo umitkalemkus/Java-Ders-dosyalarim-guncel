@@ -7,7 +7,10 @@ import java.util.List;
 public class C01_LambdaExpression {
     public static void main(String[] args) {
 /*
-	 	1) Lambda "Functional Programming"-->mathod(action) kullanan pr dili.
+
+
+
+	 	) Lambda "Functional Programming"-->mathod(action) kullanan pr dili.
 	 	   Lambda --> mathod create  etme değil mevcut method'ları(library)secip kullanmaktır...
 	       Lambda  kendi başına tanımlanabilen parametre alıp gönderebilen fonksiyonlardır.
 	 	   Lambda’lar sayesinde daha az kod ve hızlı geliştirme sağlanabilmektedir.
