@@ -14,6 +14,7 @@ public class Q01_ForLoop {
          13
          toplam =364
          */
+
     public static void main(String[] args) {
         System.out.println("istenen sonuc :");
         int toplam =0;
