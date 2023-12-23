@@ -16,6 +16,7 @@ public class Q01_ForLoop {
          */
 
     public static void main(String[] args) {
+
         System.out.println("istenen sonuc :");
         int toplam =0;
         for (int i = 100; i >=0 ; i--) {
