@@ -18,6 +18,9 @@ public class C01_LinkedList {
         7- LinkedList clss iki tane parent interface'den(List,Queue) implemet etmiştir.
          */
 
+
+
+
         LinkedList<String> ll1 = new LinkedList<>(Arrays.asList("Ebubekir", "Gülsüm", "Adem", "İlker", "Merve"));//LinkedList-> Declare+assaignment
         //LinkedList print...
         System.out.println("ll1 = " + ll1);//[Ebubekir, Gülsüm, Adem, İlker, Merve]
