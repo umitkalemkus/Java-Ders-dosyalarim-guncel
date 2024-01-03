@@ -9,6 +9,7 @@ public class C01_HashSet {
         HashSet<String > hs=new HashSet<>();//bos bir hasset
         HashSet<String > hs1=new HashSet<>(Arrays.asList("Ercan","Yakup","Adem","Rukiye","Nur"));//elelman ataması yapılan bir hasset
         //Set print etme...
+
         System.out.println("hs1 = " + hs1);//[Ercan, Adem, Nur, Yakup, Rukiye]
 
         //set add()-> eleman ekleme...
