@@ -8,6 +8,8 @@ public class Vaargs02 {
         System.out.println("multiply(2,8,15,9) = " + multiply(2, 8, 15, 9));
 
 
+
+
     }
 
     private static double multiply(int ...sayi) {

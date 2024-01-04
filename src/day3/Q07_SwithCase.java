@@ -2,7 +2,7 @@ package day3;
 
 import java.util.Scanner;
 
-public class Q07_SwithCase {
+public class      Q07_SwithCase {
     // Girilen uc haneli bir sayının okunusnu yazı ile yazdırınız.
     public static void main(String[] args) {
 
