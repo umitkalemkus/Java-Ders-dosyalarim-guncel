@@ -3,18 +3,7 @@ package j32_Abstract1.Abstract01;
 public class Civic extends Lastik{// Honda parent abs Class extend child concrete class
 
    // public  abstract  void absMethod();
-
-
-
-
-
-
-
-
-
-
-
-    @Override
+   @Override
     public void motor() {
 
         System.out.println("1.6 eco motor az yakar cok kacar");
